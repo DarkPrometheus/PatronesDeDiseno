@@ -2,7 +2,7 @@
 
 ## Configuraciones
 
-Este es proyecto de consola que utiliza .NET 6
+Este es proyecto de consola en C# que utiliza .NET 6
 
 ## Strategy
 

@@ -9,10 +9,10 @@ using PatronesDeDiseño.Strategy.QuackFolder;
 
 namespace PatronesDeDiseño.Strategy
 {
-    public static class Strategy
+    public class Strategy
     {
-        static Duck duck = new MallardDuck();
-        public static void Menu()
+        Duck duck = new MallardDuck();
+        public void Menu()
         {
             Please.WriteWithTop(" ----- Strategy ----- ");
             Please.WriteLine("¡Nacio un patito!");
@@ -63,7 +63,7 @@ namespace PatronesDeDiseño.Strategy
             }
         }
 
-        static void ChangeFlyBeheavor()
+        void ChangeFlyBeheavor()
         {
             ChangeFlyBeheavorMenu();
             switch (Please.AskToUser())
@@ -84,7 +84,7 @@ namespace PatronesDeDiseño.Strategy
             Please.Wait();
         }
 
-        static void ChangeFlyBeheavorMenu()
+        void ChangeFlyBeheavorMenu()
         {
             Please.WriteWithTop("¿Como quieres que tu pato vuele?");
             Please.WriteLine("1. Fly with wings");
@@ -92,7 +92,7 @@ namespace PatronesDeDiseño.Strategy
             Please.GiveMePadding();
         }
 
-        static void ChangeQuackBeheavor()
+        void ChangeQuackBeheavor()
         {
             ChangeQuackBeheavorMenu();
             switch (Please.AskToUser())
@@ -118,7 +118,7 @@ namespace PatronesDeDiseño.Strategy
             Please.Wait();
         }
 
-        static void ChangeQuackBeheavorMenu()
+        void ChangeQuackBeheavorMenu()
         {
             Please.WriteWithTop("¿Que sonido quieres que haga tu pato?");
             Please.WriteLine("1. Mute");
@@ -127,7 +127,7 @@ namespace PatronesDeDiseño.Strategy
             Please.GiveMePadding();
         }
 
-        static void MainMenuOptions()
+        void MainMenuOptions()
         {
             Please.WriteLine("1. Display");
             Please.WriteLine("2. Hacer Quack");

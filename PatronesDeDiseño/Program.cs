@@ -16,7 +16,8 @@ class MainProgram
             switch (Please.AskToUser())
             {
                 case 1:
-                    Strategy.Menu();
+                    Strategy strategy = new();
+                    strategy.Menu();
                     break;
                 default:
                     Please.WriteWithTop("Mmmmmmm, no, ese numero no esta en la lista");
